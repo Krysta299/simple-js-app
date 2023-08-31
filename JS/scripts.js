@@ -21,7 +21,7 @@ let pokemonList= [
     }
 ];
 
-for (let i= 1 ; i<= pokemonList.lenght ; i++) {
+for (let i= 1 ; i<= pokemonList.length ; i++) {
     if (pokemonList[i].height <1.5 && pokemonList[i].height >0.5){
         console.log('this is a small pokemon');
     }else if (pokemonList[i].height <2){
