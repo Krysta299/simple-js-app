@@ -21,8 +21,8 @@
             types: ['grass' , 'poison']},
             ]
 
-      for (let i= 1 ; i<= pokemonList.length ; i++) {
-        if (pokemonList[i].height <0 || pokemonList[i].height >1.5){
+      for (let i= 0 ; i< pokemonList.length ; i++) {
+        if (pokemonList[i].height <1.5 && pokemonList[i].height >0){
             console.log('this is a small pokemon');
         }else if (pokemonList[i].height <2){
             console.log('this is an average pokemon');
