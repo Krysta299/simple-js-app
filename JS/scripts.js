@@ -22,11 +22,15 @@ let pokemonList= [
 ];
 
 for (let i= 0 ; i< pokemonList.length ; i++) {
+    const pokemon = pokemonList[i];
+    let message = 'Wow, that’s big!';
+    document.write('<p>' + pokemon.name + 'Height:' + pokemon.height + '<p>');
     if (pokemonList[i].height <1.5 && pokemonList[i].height >0){
         console.log('this is a small pokemon');
     }else if (pokemonList[i].height <2){
         console.log('this is an average pokemon');
     }else {
         console.log('this is a big pokemon');
+        document.write('<p>' + '-' + message + '</p>');
     }
 }
