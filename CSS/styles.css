@@ -1,0 +1,27 @@
+.container {
+    background-color: #F0F8FF;
+    border: 1.5px solid #D2B48C;
+    height: 100px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.button {
+    border: none;
+    color: antiquewhite;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.selected {
+    border: .5px solid navy; 
+    color: navy; 
+}
