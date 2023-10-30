@@ -4,35 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple JS App</title>
+    <link  href="css/styles.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <header>Pokemon List</header>
+      <ul class="pokemon-list">
+        <button type="button">Butterfree</button>
+        <button type="button">Charizard</button>
+        <button type="button">Venusaur</button>
+      </ul>
+    </div>
+    <div class="button"></div> 
+       
+    <script src="js/scripts.js"></script>  
+    
     <script>
-      const pokemonList = [{
-        name: 'Butterfree',
-        height: 1.1,
-        types: ['bug', 'flying']
-      }, {
-        name: 'Charizard',
-        height: 1.7,
-        types: ['fire', 'flying']
-      }, {
-        name: 'Vennsaur',
-        height: 2,
-        types: ['grass', 'poison']
-      }];
-
-      pokemonList.forEach(function(pokemon) {
-        let message = 'Wow, that’s big!';
-        document.write('<p>' + pokemon.name + '-' + 'Height:' + pokemon.height + '</p>');
-        if (pokemon.height < 1.5 && pokemon.height >= 1) {
-          console.log('this is a small pokemon');
-        } else if (pokemon.height < 2) {
-          console.log('this is an average pokemon');
-        } else {
-          console.log('this is a big pokemon');
-          document.write('<p>' + pokemon.name + '-' + message + '</p>');
+      const pokemonList = [
+        {
+          name: 'Butterfree',
+          height: 1.1,
+          types: ['bug', 'flying']
+        },
+        {
+          name: 'Charizard',
+          height: 1.7,
+          types: ['fire', 'flying']
+        },
+        {
+          name: 'Venusaur',
+          height: 2,
+          types: ['grass', 'poison']
         }
-      });
+      ];
+      
+
     </script>
   </body>
 </html>
